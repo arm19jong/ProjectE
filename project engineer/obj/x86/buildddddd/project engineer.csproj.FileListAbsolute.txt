@@ -1,0 +1,18 @@
+C:\Users\jongzazaal\Documents\projecten\project engineer\project engineer\bin\x86\buildddddd\project engineer.exe.config
+C:\Users\jongzazaal\Documents\projecten\project engineer\project engineer\bin\x86\buildddddd\project engineer.exe
+C:\Users\jongzazaal\Documents\projecten\project engineer\project engineer\bin\x86\buildddddd\project engineer.pdb
+C:\Users\jongzazaal\Documents\projecten\project engineer\project engineer\bin\x86\buildddddd\EntityFramework.dll
+C:\Users\jongzazaal\Documents\projecten\project engineer\project engineer\bin\x86\buildddddd\EntityFramework.SqlServer.dll
+C:\Users\jongzazaal\Documents\projecten\project engineer\project engineer\bin\x86\buildddddd\System.Data.SQLite.dll
+C:\Users\jongzazaal\Documents\projecten\project engineer\project engineer\bin\x86\buildddddd\System.Data.SQLite.EF6.dll
+C:\Users\jongzazaal\Documents\projecten\project engineer\project engineer\bin\x86\buildddddd\System.Data.SQLite.Linq.dll
+C:\Users\jongzazaal\Documents\projecten\project engineer\project engineer\bin\x86\buildddddd\EntityFramework.xml
+C:\Users\jongzazaal\Documents\projecten\project engineer\project engineer\bin\x86\buildddddd\EntityFramework.SqlServer.xml
+C:\Users\jongzazaal\Documents\projecten\project engineer\project engineer\bin\x86\buildddddd\System.Data.SQLite.xml
+C:\Users\jongzazaal\Documents\projecten\project engineer\project engineer\obj\x86\buildddddd\project engineer.csprojResolveAssemblyReference.cache
+C:\Users\jongzazaal\Documents\projecten\project engineer\project engineer\obj\x86\buildddddd\project_engineer.Form1.resources
+C:\Users\jongzazaal\Documents\projecten\project engineer\project engineer\obj\x86\buildddddd\project_engineer.Form2.resources
+C:\Users\jongzazaal\Documents\projecten\project engineer\project engineer\obj\x86\buildddddd\project_engineer.Properties.Resources.resources
+C:\Users\jongzazaal\Documents\projecten\project engineer\project engineer\obj\x86\buildddddd\project engineer.csproj.GenerateResource.Cache
+C:\Users\jongzazaal\Documents\projecten\project engineer\project engineer\obj\x86\buildddddd\project engineer.exe
+C:\Users\jongzazaal\Documents\projecten\project engineer\project engineer\obj\x86\buildddddd\project engineer.pdb
