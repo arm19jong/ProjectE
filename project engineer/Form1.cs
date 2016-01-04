@@ -450,6 +450,11 @@ namespace project_engineer
             TableAll_update_Member(sender, e);
             TableAll_update_Admin(sender, e);
             textBox_IDKMITL_TextChanged(sender, e);
+            textBox_AddAdmin_User_Admin.Text = "";
+            textBox_AddAdmin_Pass_Admin.Text = "";
+            textBox_AddAdmin_con_Admin.Text = "";
+            textBox_AddAdmin_User.Text = "";
+            textBox_AddAdmin_Pass.Text = "";
 
 
 
@@ -644,7 +649,7 @@ namespace project_engineer
             SQLiteDataReader readsearch = cmdsearch.ExecuteReader();
             while (readsearch.Read())
             {
-                if (textBox_ITKMITL2.Text.Equals(readsearch["IDKMITL"].ToString()) && check == false && !readsearch["Stana"].ToString().Equals("จอง"))
+                if (textBox_ITKMITL2.Text.Equals(readsearch["IDKMITL"].ToString()) && check == false && !readsearch["Stana"].ToString().Equals("จอง") && !readsearch["Stana"].ToString().Equals("คืน"))
                 {
                     if (readsearch["StatusAll"].ToString().Equals("")) { }
                     else
@@ -1679,7 +1684,7 @@ namespace project_engineer
                         return;
 
                     }
-                    else if (i == Tabrows-1 && ctaa == false)
+                    else if (i == Tabrows && ctaa == false)
                     {
                         MessageBox.Show("ขออภัยคุณกรอก Username หรือ Password(God, Admin) ไม่ถูกต้อง", "unsuccessful",
                         MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -1688,7 +1693,7 @@ namespace project_engineer
                     }
 
                 }
-                else if (i == Tabrows-1 && ctaa == false)
+                else if (i == Tabrows && ctaa == false)
                 {
                     MessageBox.Show("ขออภัยคุณกรอก Username หรือ Password(God, Admin) ไม่ถูกต้อง", "unsuccessful",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -2129,6 +2134,11 @@ namespace project_engineer
         }
 
         private void clearscreen(object sender, EventArgs e) {
+            textBox_AddAdmin_User_Admin.Text = "";
+            textBox_AddAdmin_Pass_Admin.Text = "";
+            textBox_AddAdmin_con_Admin.Text = "";
+            textBox_AddAdmin_User.Text = "";
+            textBox_AddAdmin_Pass.Text = "";
             textBox_IDKMITL.Text = "";
             textBox_Nic.Text = "";
             textBox_Name.Text = "";
@@ -2203,7 +2213,7 @@ namespace project_engineer
                         return;
 
                     }
-                    else if (i == Tabrows-1 && ctaa2 == false)
+                    else if (i == Tabrows && ctaa2 == false)
                     {
                         MessageBox.Show("ขออภัยคุณกรอก Username หรือ Password(God, Admin) ไม่ถูกต้อง", "unsuccessful",
                         MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -2212,7 +2222,7 @@ namespace project_engineer
                     }
 
                 }
-                else if (i == Tabrows-1 && ctaa2 == false)
+                else if (i == Tabrows && ctaa2 == false)
                 {
                     MessageBox.Show("ขออภัยคุณกรอก Username หรือ Password(God, Admin) ไม่ถูกต้อง", "unsuccessful",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
