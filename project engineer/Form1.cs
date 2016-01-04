@@ -77,6 +77,7 @@ namespace project_engineer
         TableLayoutPanel TabAll_Table_Admin;
         Dictionary<string, string> dic_ip;
         //***************************************************************************************//
+        bool checkkk;
         //***************************************************************************************//
 
         public SQLiteConnection com = new SQLiteConnection(@"Data Source=db.db;Version=3;");
@@ -702,8 +703,10 @@ namespace project_engineer
             SQLiteDataReader readsearch = cmdsearch.ExecuteReader();
             userpass = false;
             user_ag = "";
+            int i = 0;
             while (readsearch.Read())
             {
+                i += 1;
                 if (readsearch["StanaM"].ToString().Equals("God") || readsearch["StanaM"].ToString().Equals("Admin"))
                 {
                     //userpass.Add(readsearch["User"].ToString(), readsearch["Pass"].ToString());
@@ -718,7 +721,7 @@ namespace project_engineer
                         user_ag = readsearch["Name"].ToString();
 
                     }
-                    else if (Convert.ToInt32(readsearch["ID"].ToString()) == Tabrows && userpass == false)
+                    else if (i == Tabrows && userpass == false)
                     {
                         MessageBox.Show("ขออภัยคุณกรอก Username หรือ Password(God, Admin) ไม่ถูกต้อง", "unsuccessful",
                         MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -727,7 +730,7 @@ namespace project_engineer
                     }
 
                 }
-                else if (Convert.ToInt32(readsearch["ID"].ToString()) == Tabrows && userpass==false)
+                else if (i == Tabrows && userpass==false)
                 {
                     MessageBox.Show("ขออภัยคุณกรอก Username หรือ Password(God, Admin) ไม่ถูกต้อง", "unsuccessful",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -1607,7 +1610,7 @@ namespace project_engineer
         {
             com.Open();
             sea = new ArrayList();
-
+            //MessageBox.Show("a");
             SQLiteCommand cmd_r = new SQLiteCommand("SELECT COUNT(*) FROM MEMBER", com);
             int Tabrows = Convert.ToInt32(cmd_r.ExecuteScalar());
             com.Close();
@@ -1615,8 +1618,10 @@ namespace project_engineer
             com.Open();
             SQLiteCommand cmdsearch = new SQLiteCommand("SELECT * FROM MEMBER", com);
             SQLiteDataReader readsearch = cmdsearch.ExecuteReader();
+            int a = 0;
             while (readsearch.Read())
             {
+                a += 1;
                 if (textBox_IDKMITL.Text.Equals(readsearch["IDKMITL"].ToString()))
                 {
                     textBox_Name.Text = readsearch["name"].ToString();
@@ -1630,7 +1635,8 @@ namespace project_engineer
                     label9.ForeColor = Color.Green;
                     abc2 = true;
                 }
-                else if (Convert.ToInt32(readsearch["ID"].ToString()) == Tabrows && abc2 == false)
+                //else if (Convert.ToInt32(readsearch["ID"].ToString()) == Tabrows && abc2 == false)
+                else if (a == Tabrows && abc2 == false)
                 {
                     textBox_Name.Text = "";
                     textBox_Nic.Text = "";
@@ -1656,8 +1662,10 @@ namespace project_engineer
             SQLiteCommand cmdsearch = new SQLiteCommand("SELECT * FROM MEMBER", com);
             SQLiteDataReader readsearch = cmdsearch.ExecuteReader();
             ctaa = false;
+            int i = 0;
             while (readsearch.Read())
             {
+                i += 1;
                 if (readsearch["StanaM"].ToString().Equals("God") || readsearch["StanaM"].ToString().Equals("Admin"))
                 {
                     if (readsearch["User"].ToString().Equals(textBox2.Text) && readsearch["Pass"].ToString().Equals(textBox3.Text))
@@ -1671,7 +1679,7 @@ namespace project_engineer
                         return;
 
                     }
-                    else if (Convert.ToInt32(readsearch["ID"].ToString()) == Tabrows-1 && ctaa == false)
+                    else if (i == Tabrows-1 && ctaa == false)
                     {
                         MessageBox.Show("ขออภัยคุณกรอก Username หรือ Password(God, Admin) ไม่ถูกต้อง", "unsuccessful",
                         MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -1680,7 +1688,7 @@ namespace project_engineer
                     }
 
                 }
-                else if (Convert.ToInt32(readsearch["ID"].ToString()) == Tabrows-1 && ctaa == false)
+                else if (i == Tabrows-1 && ctaa == false)
                 {
                     MessageBox.Show("ขออภัยคุณกรอก Username หรือ Password(God, Admin) ไม่ถูกต้อง", "unsuccessful",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -1989,6 +1997,16 @@ namespace project_engineer
 
         private void button9_Click(object sender, EventArgs e)
         {
+            if (textBox4.Text.Length < 8) {
+                MessageBox.Show("กรุณากรอกรหัสนักศึกษาให้ครบ 8 ตัว", "Error", MessageBoxButtons.OK);
+                return;
+            }
+
+            if (checkkk == false) {
+                MessageBox.Show("ไม่มีรหัสนักศึกษานี้อยู่ในระบบ", "Error", MessageBoxButtons.OK);
+                return;
+            }
+
             com.Open();
             SQLiteCommand cmdsearch2 = new SQLiteCommand("SELECT * FROM MEMBER", com);
             SQLiteDataReader readsearch2 = cmdsearch2.ExecuteReader();
@@ -2041,6 +2059,7 @@ namespace project_engineer
 
         private void textBox4_TextChanged(object sender, EventArgs e)
         {
+            checkkk = false;
             com.Open();
             sea = new ArrayList();
             SQLiteCommand cmdsearch = new SQLiteCommand("SELECT * FROM MEMBER", com);
@@ -2056,6 +2075,7 @@ namespace project_engineer
                 {
                     label28.Text = "มีข้อมูล";
                     label28.ForeColor = Color.Green;
+                    checkkk = true;
                     break;
                 }
                 else
@@ -2069,7 +2089,14 @@ namespace project_engineer
 
         private void button10_Click(object sender, EventArgs e)
         {
-            DialogResult dialogResult = MessageBox.Show("คุณต้องการจะลบ", "ลบข้อมูลสมาชิก", MessageBoxButtons.YesNo);
+            if (textBox7.Text.Length < 8 || textBox8.Text.Length < 8)
+            {
+                MessageBox.Show("กรุณากรอกรหัสนักศึกษาให้ครบ 8 ตัว", "Error", MessageBoxButtons.OK);
+                return;
+            }
+
+
+            DialogResult dialogResult = MessageBox.Show("คุณต้องการจะลบ "+ textBox7.Text +" - "+textBox8.Text, "ลบข้อมูลสมาชิก", MessageBoxButtons.YesNo);
             if (dialogResult == DialogResult.Yes)
             {
                 //do something
@@ -2104,6 +2131,7 @@ namespace project_engineer
         private void clearscreen(object sender, EventArgs e) {
             textBox_IDKMITL.Text = "";
             textBox_Nic.Text = "";
+            textBox_Name.Text = "";
             textBox_Park.Text = "";
             textBox_Phone.Text = "";
             richTextBox_Other.Text = "";
@@ -2158,8 +2186,10 @@ namespace project_engineer
             SQLiteCommand cmdsearch = new SQLiteCommand("SELECT * FROM MEMBER", com);
             SQLiteDataReader readsearch = cmdsearch.ExecuteReader();
             ctaa2 = false;
+            int i = 0;
             while (readsearch.Read())
             {
+                i += 1;
                 if (readsearch["StanaM"].ToString().Equals("God"))
                 {
                     if (readsearch["User"].ToString().Equals(textBox5.Text) && readsearch["Pass"].ToString().Equals(textBox6.Text))
@@ -2173,7 +2203,7 @@ namespace project_engineer
                         return;
 
                     }
-                    else if (Convert.ToInt32(readsearch["ID"].ToString()) == Tabrows-1 && ctaa2 == false)
+                    else if (i == Tabrows-1 && ctaa2 == false)
                     {
                         MessageBox.Show("ขออภัยคุณกรอก Username หรือ Password(God, Admin) ไม่ถูกต้อง", "unsuccessful",
                         MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -2182,7 +2212,7 @@ namespace project_engineer
                     }
 
                 }
-                else if (Convert.ToInt32(readsearch["ID"].ToString()) == Tabrows-1 && ctaa2 == false)
+                else if (i == Tabrows-1 && ctaa2 == false)
                 {
                     MessageBox.Show("ขออภัยคุณกรอก Username หรือ Password(God, Admin) ไม่ถูกต้อง", "unsuccessful",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);

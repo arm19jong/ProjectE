@@ -263,7 +263,7 @@
             this.textBox_AddAdmin_con_Admin.Name = "textBox_AddAdmin_con_Admin";
             this.textBox_AddAdmin_con_Admin.PasswordChar = '*';
             this.textBox_AddAdmin_con_Admin.Size = new System.Drawing.Size(164, 29);
-            this.textBox_AddAdmin_con_Admin.TabIndex = 32;
+            this.textBox_AddAdmin_con_Admin.TabIndex = 15;
             // 
             // textBox_AddAdmin_Pass_Admin
             // 
@@ -271,14 +271,14 @@
             this.textBox_AddAdmin_Pass_Admin.Name = "textBox_AddAdmin_Pass_Admin";
             this.textBox_AddAdmin_Pass_Admin.PasswordChar = '*';
             this.textBox_AddAdmin_Pass_Admin.Size = new System.Drawing.Size(164, 29);
-            this.textBox_AddAdmin_Pass_Admin.TabIndex = 31;
+            this.textBox_AddAdmin_Pass_Admin.TabIndex = 14;
             // 
             // textBox_AddAdmin_User_Admin
             // 
             this.textBox_AddAdmin_User_Admin.Location = new System.Drawing.Point(310, 376);
             this.textBox_AddAdmin_User_Admin.Name = "textBox_AddAdmin_User_Admin";
             this.textBox_AddAdmin_User_Admin.Size = new System.Drawing.Size(164, 29);
-            this.textBox_AddAdmin_User_Admin.TabIndex = 30;
+            this.textBox_AddAdmin_User_Admin.TabIndex = 13;
             // 
             // label15
             // 
@@ -313,14 +313,14 @@
             this.textBox_AddAdmin_Pass.Name = "textBox_AddAdmin_Pass";
             this.textBox_AddAdmin_Pass.PasswordChar = '*';
             this.textBox_AddAdmin_Pass.Size = new System.Drawing.Size(187, 29);
-            this.textBox_AddAdmin_Pass.TabIndex = 26;
+            this.textBox_AddAdmin_Pass.TabIndex = 17;
             // 
             // textBox_AddAdmin_User
             // 
             this.textBox_AddAdmin_User.Location = new System.Drawing.Point(737, 373);
             this.textBox_AddAdmin_User.Name = "textBox_AddAdmin_User";
             this.textBox_AddAdmin_User.Size = new System.Drawing.Size(187, 29);
-            this.textBox_AddAdmin_User.TabIndex = 25;
+            this.textBox_AddAdmin_User.TabIndex = 16;
             // 
             // label12
             // 
@@ -391,7 +391,7 @@
             this.comboBox_faculty.Location = new System.Drawing.Point(682, 141);
             this.comboBox_faculty.Name = "comboBox_faculty";
             this.comboBox_faculty.Size = new System.Drawing.Size(366, 32);
-            this.comboBox_faculty.TabIndex = 19;
+            this.comboBox_faculty.TabIndex = 8;
             this.comboBox_faculty.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.comboBox_faculty_KeyPress);
             // 
             // Label_nic
@@ -408,7 +408,7 @@
             this.button_Addmember.Location = new System.Drawing.Point(860, 580);
             this.button_Addmember.Name = "button_Addmember";
             this.button_Addmember.Size = new System.Drawing.Size(126, 38);
-            this.button_Addmember.TabIndex = 17;
+            this.button_Addmember.TabIndex = 18;
             this.button_Addmember.Text = "เพิ่มข้อมูล";
             this.button_Addmember.UseVisualStyleBackColor = true;
             this.button_Addmember.Click += new System.EventHandler(this.button_Addmember_Click);
@@ -431,7 +431,7 @@
             this.comboBox_Room.Location = new System.Drawing.Point(682, 180);
             this.comboBox_Room.Name = "comboBox_Room";
             this.comboBox_Room.Size = new System.Drawing.Size(215, 32);
-            this.comboBox_Room.TabIndex = 13;
+            this.comboBox_Room.TabIndex = 10;
             this.comboBox_Room.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.comboBox_Room_KeyPress);
             // 
             // richTextBox_Other
@@ -439,7 +439,7 @@
             this.richTextBox_Other.Location = new System.Drawing.Point(207, 560);
             this.richTextBox_Other.Name = "richTextBox_Other";
             this.richTextBox_Other.Size = new System.Drawing.Size(619, 83);
-            this.richTextBox_Other.TabIndex = 15;
+            this.richTextBox_Other.TabIndex = 12;
             this.richTextBox_Other.Text = "";
             // 
             // textBox_Phone
@@ -448,7 +448,7 @@
             this.textBox_Phone.MaxLength = 10;
             this.textBox_Phone.Name = "textBox_Phone";
             this.textBox_Phone.Size = new System.Drawing.Size(219, 29);
-            this.textBox_Phone.TabIndex = 14;
+            this.textBox_Phone.TabIndex = 11;
             this.textBox_Phone.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_Phone_KeyPress);
             // 
             // textBox_Park
@@ -456,21 +456,21 @@
             this.textBox_Park.Location = new System.Drawing.Point(201, 183);
             this.textBox_Park.Name = "textBox_Park";
             this.textBox_Park.Size = new System.Drawing.Size(219, 29);
-            this.textBox_Park.TabIndex = 12;
+            this.textBox_Park.TabIndex = 9;
             // 
             // textBox_Nic
             // 
             this.textBox_Nic.Location = new System.Drawing.Point(201, 141);
             this.textBox_Nic.Name = "textBox_Nic";
             this.textBox_Nic.Size = new System.Drawing.Size(219, 29);
-            this.textBox_Nic.TabIndex = 10;
+            this.textBox_Nic.TabIndex = 7;
             // 
             // textBox_Name
             // 
             this.textBox_Name.Location = new System.Drawing.Point(682, 96);
             this.textBox_Name.Name = "textBox_Name";
             this.textBox_Name.Size = new System.Drawing.Size(367, 29);
-            this.textBox_Name.TabIndex = 9;
+            this.textBox_Name.TabIndex = 6;
             // 
             // textBox_IDKMITL
             // 
@@ -478,7 +478,7 @@
             this.textBox_IDKMITL.MaxLength = 8;
             this.textBox_IDKMITL.Name = "textBox_IDKMITL";
             this.textBox_IDKMITL.Size = new System.Drawing.Size(219, 29);
-            this.textBox_IDKMITL.TabIndex = 8;
+            this.textBox_IDKMITL.TabIndex = 5;
             this.textBox_IDKMITL.TextChanged += new System.EventHandler(this.textBox_IDKMITL_TextChanged);
             this.textBox_IDKMITL.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_IDKMITL_KeyPress);
             // 
@@ -602,7 +602,7 @@
             this.button15.Location = new System.Drawing.Point(823, 88);
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(161, 39);
-            this.button15.TabIndex = 44;
+            this.button15.TabIndex = 18;
             this.button15.Text = "โชว์รายการพัสดุ";
             this.button15.UseVisualStyleBackColor = true;
             this.button15.Click += new System.EventHandler(this.button15_Click);
@@ -751,14 +751,14 @@
             this.textBox_Rec_Pass.Name = "textBox_Rec_Pass";
             this.textBox_Rec_Pass.PasswordChar = '*';
             this.textBox_Rec_Pass.Size = new System.Drawing.Size(184, 29);
-            this.textBox_Rec_Pass.TabIndex = 26;
+            this.textBox_Rec_Pass.TabIndex = 20;
             // 
             // textBox_Rec_User
             // 
             this.textBox_Rec_User.Location = new System.Drawing.Point(923, 584);
             this.textBox_Rec_User.Name = "textBox_Rec_User";
             this.textBox_Rec_User.Size = new System.Drawing.Size(184, 29);
-            this.textBox_Rec_User.TabIndex = 25;
+            this.textBox_Rec_User.TabIndex = 19;
             // 
             // label7
             // 
@@ -836,7 +836,7 @@
             this.comboBox_DataBack_min.Location = new System.Drawing.Point(497, 602);
             this.comboBox_DataBack_min.Name = "comboBox_DataBack_min";
             this.comboBox_DataBack_min.Size = new System.Drawing.Size(66, 32);
-            this.comboBox_DataBack_min.TabIndex = 23;
+            this.comboBox_DataBack_min.TabIndex = 16;
             this.comboBox_DataBack_min.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.comboBox_DataBack_min_KeyPress);
             // 
             // comboBox_DataBack_Hourse
@@ -870,7 +870,7 @@
             this.comboBox_DataBack_Hourse.Location = new System.Drawing.Point(410, 602);
             this.comboBox_DataBack_Hourse.Name = "comboBox_DataBack_Hourse";
             this.comboBox_DataBack_Hourse.Size = new System.Drawing.Size(69, 32);
-            this.comboBox_DataBack_Hourse.TabIndex = 22;
+            this.comboBox_DataBack_Hourse.TabIndex = 15;
             this.comboBox_DataBack_Hourse.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.comboBox_DataBack_Hourse_KeyPress);
             // 
             // comboBox_DataLend_min
@@ -940,7 +940,7 @@
             this.comboBox_DataLend_min.Location = new System.Drawing.Point(497, 543);
             this.comboBox_DataLend_min.Name = "comboBox_DataLend_min";
             this.comboBox_DataLend_min.Size = new System.Drawing.Size(66, 32);
-            this.comboBox_DataLend_min.TabIndex = 21;
+            this.comboBox_DataLend_min.TabIndex = 13;
             this.comboBox_DataLend_min.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.comboBox_DataLend_min_KeyPress);
             // 
             // comboBox_DataLend_Hourse
@@ -974,7 +974,7 @@
             this.comboBox_DataLend_Hourse.Location = new System.Drawing.Point(410, 543);
             this.comboBox_DataLend_Hourse.Name = "comboBox_DataLend_Hourse";
             this.comboBox_DataLend_Hourse.Size = new System.Drawing.Size(69, 32);
-            this.comboBox_DataLend_Hourse.TabIndex = 20;
+            this.comboBox_DataLend_Hourse.TabIndex = 12;
             this.comboBox_DataLend_Hourse.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.comboBox_DataLend_Hourse_KeyPress);
             // 
             // SubmitRecord
@@ -982,7 +982,7 @@
             this.SubmitRecord.Location = new System.Drawing.Point(1155, 602);
             this.SubmitRecord.Name = "SubmitRecord";
             this.SubmitRecord.Size = new System.Drawing.Size(91, 33);
-            this.SubmitRecord.TabIndex = 19;
+            this.SubmitRecord.TabIndex = 21;
             this.SubmitRecord.Text = "Submit";
             this.SubmitRecord.UseVisualStyleBackColor = true;
             this.SubmitRecord.Click += new System.EventHandler(this.SubmitRecord_Click);
@@ -992,7 +992,7 @@
             this.dateTimePicker2.Location = new System.Drawing.Point(185, 602);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(200, 29);
-            this.dateTimePicker2.TabIndex = 18;
+            this.dateTimePicker2.TabIndex = 14;
             this.dateTimePicker2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.dateTimePicker2_KeyPress);
             // 
             // button2
@@ -1000,7 +1000,7 @@
             this.button2.Location = new System.Drawing.Point(657, 88);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(126, 41);
-            this.button2.TabIndex = 15;
+            this.button2.TabIndex = 17;
             this.button2.Text = "เพิ่มรายการ";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -1020,7 +1020,7 @@
             this.comboBox_Card2.Location = new System.Drawing.Point(249, 466);
             this.comboBox_Card2.Name = "comboBox_Card2";
             this.comboBox_Card2.Size = new System.Drawing.Size(121, 32);
-            this.comboBox_Card2.TabIndex = 11;
+            this.comboBox_Card2.TabIndex = 10;
             this.comboBox_Card2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.comboBox_Card2_KeyPress);
             // 
             // Label_Card2
@@ -1088,7 +1088,7 @@
             this.dateTimePicker1.Location = new System.Drawing.Point(185, 543);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 29);
-            this.dateTimePicker1.TabIndex = 3;
+            this.dateTimePicker1.TabIndex = 11;
             this.dateTimePicker1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.dateTimePicker1_KeyPress);
             // 
             // radioButton_back
@@ -1152,7 +1152,7 @@
             this.tabControl2.Location = new System.Drawing.Point(0, 0);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(1300, 768);
+            this.tabControl2.Size = new System.Drawing.Size(1300, 732);
             this.tabControl2.TabIndex = 0;
             // 
             // tabPage8
@@ -1161,7 +1161,7 @@
             this.tabPage8.Location = new System.Drawing.Point(4, 22);
             this.tabPage8.Name = "tabPage8";
             this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage8.Size = new System.Drawing.Size(1292, 742);
+            this.tabPage8.Size = new System.Drawing.Size(1292, 706);
             this.tabPage8.TabIndex = 0;
             this.tabPage8.Text = "รายการพัสดุ";
             this.tabPage8.UseVisualStyleBackColor = true;
@@ -1180,7 +1180,7 @@
             this.tabPage10.Location = new System.Drawing.Point(4, 22);
             this.tabPage10.Name = "tabPage10";
             this.tabPage10.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage10.Size = new System.Drawing.Size(1292, 742);
+            this.tabPage10.Size = new System.Drawing.Size(1292, 706);
             this.tabPage10.TabIndex = 2;
             this.tabPage10.Text = "ตารางแสดงสมาชิก";
             this.tabPage10.UseVisualStyleBackColor = true;
@@ -1201,7 +1201,7 @@
             this.tabPage11.Location = new System.Drawing.Point(4, 22);
             this.tabPage11.Name = "tabPage11";
             this.tabPage11.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage11.Size = new System.Drawing.Size(1292, 742);
+            this.tabPage11.Size = new System.Drawing.Size(1292, 706);
             this.tabPage11.TabIndex = 3;
             this.tabPage11.Text = "ประวัติการจอง/ยืม/คืนรายบุคคล";
             this.tabPage11.UseVisualStyleBackColor = true;
@@ -1246,7 +1246,7 @@
             this.tabPage12.Location = new System.Drawing.Point(4, 22);
             this.tabPage12.Name = "tabPage12";
             this.tabPage12.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage12.Size = new System.Drawing.Size(1292, 742);
+            this.tabPage12.Size = new System.Drawing.Size(1292, 706);
             this.tabPage12.TabIndex = 4;
             this.tabPage12.Text = "ตารางแสดงการจอง/ยืม/คืนทั้งหมด";
             this.tabPage12.UseVisualStyleBackColor = true;
@@ -1325,7 +1325,7 @@
             this.textBox2.Location = new System.Drawing.Point(273, 75);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 2;
+            this.textBox2.TabIndex = 1;
             // 
             // textBox3
             // 
@@ -1333,7 +1333,7 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.PasswordChar = '*';
             this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 3;
+            this.textBox3.TabIndex = 2;
             this.textBox3.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox3_KeyDown);
             // 
             // button1
@@ -1341,7 +1341,7 @@
             this.button1.Location = new System.Drawing.Point(461, 75);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(93, 31);
-            this.button1.TabIndex = 1;
+            this.button1.TabIndex = 3;
             this.button1.Text = "login";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
@@ -1443,7 +1443,7 @@
             this.textBox_Con_God.Name = "textBox_Con_God";
             this.textBox_Con_God.PasswordChar = '*';
             this.textBox_Con_God.Size = new System.Drawing.Size(158, 29);
-            this.textBox_Con_God.TabIndex = 42;
+            this.textBox_Con_God.TabIndex = 37;
             // 
             // label25
             // 
@@ -1478,14 +1478,14 @@
             this.textBox_Pass_god.Name = "textBox_Pass_god";
             this.textBox_Pass_god.PasswordChar = '*';
             this.textBox_Pass_god.Size = new System.Drawing.Size(165, 29);
-            this.textBox_Pass_god.TabIndex = 38;
+            this.textBox_Pass_god.TabIndex = 36;
             // 
             // textBox_User_god
             // 
             this.textBox_User_god.Location = new System.Drawing.Point(269, 497);
             this.textBox_User_god.Name = "textBox_User_god";
             this.textBox_User_god.Size = new System.Drawing.Size(165, 29);
-            this.textBox_User_god.TabIndex = 37;
+            this.textBox_User_god.TabIndex = 35;
             // 
             // comboBox_Faculty_God
             // 
@@ -1505,7 +1505,7 @@
             this.comboBox_Faculty_God.Location = new System.Drawing.Point(614, 155);
             this.comboBox_Faculty_God.Name = "comboBox_Faculty_God";
             this.comboBox_Faculty_God.Size = new System.Drawing.Size(304, 32);
-            this.comboBox_Faculty_God.TabIndex = 36;
+            this.comboBox_Faculty_God.TabIndex = 30;
             this.comboBox_Faculty_God.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.comboBox_Faculty_God_KeyPress);
             // 
             // label10
@@ -1522,7 +1522,7 @@
             this.button_Submit_God.Location = new System.Drawing.Point(791, 549);
             this.button_Submit_God.Name = "button_Submit_God";
             this.button_Submit_God.Size = new System.Drawing.Size(126, 38);
-            this.button_Submit_God.TabIndex = 34;
+            this.button_Submit_God.TabIndex = 38;
             this.button_Submit_God.Text = "บันทึกข้อมูล";
             this.button_Submit_God.UseVisualStyleBackColor = true;
             this.button_Submit_God.Click += new System.EventHandler(this.button_Submit_God_Click);
@@ -1545,7 +1545,7 @@
             this.comboBox_Room_God.Location = new System.Drawing.Point(614, 208);
             this.comboBox_Room_God.Name = "comboBox_Room_God";
             this.comboBox_Room_God.Size = new System.Drawing.Size(215, 32);
-            this.comboBox_Room_God.TabIndex = 31;
+            this.comboBox_Room_God.TabIndex = 32;
             this.comboBox_Room_God.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.comboBox_Room_God_KeyPress);
             // 
             // richTextBox_Other_God
@@ -1553,7 +1553,7 @@
             this.richTextBox_Other_God.Location = new System.Drawing.Point(179, 349);
             this.richTextBox_Other_God.Name = "richTextBox_Other_God";
             this.richTextBox_Other_God.Size = new System.Drawing.Size(738, 123);
-            this.richTextBox_Other_God.TabIndex = 33;
+            this.richTextBox_Other_God.TabIndex = 34;
             this.richTextBox_Other_God.Text = "";
             // 
             // textBox_Phond_God
@@ -1562,7 +1562,7 @@
             this.textBox_Phond_God.MaxLength = 10;
             this.textBox_Phond_God.Name = "textBox_Phond_God";
             this.textBox_Phond_God.Size = new System.Drawing.Size(219, 29);
-            this.textBox_Phond_God.TabIndex = 32;
+            this.textBox_Phond_God.TabIndex = 33;
             this.textBox_Phond_God.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_Phond_God_KeyPress);
             // 
             // textBox_Park_God
@@ -1570,7 +1570,7 @@
             this.textBox_Park_God.Location = new System.Drawing.Point(179, 211);
             this.textBox_Park_God.Name = "textBox_Park_God";
             this.textBox_Park_God.Size = new System.Drawing.Size(219, 29);
-            this.textBox_Park_God.TabIndex = 30;
+            this.textBox_Park_God.TabIndex = 31;
             // 
             // textBox_Nic_God
             // 
@@ -1589,8 +1589,8 @@
             // textBox_IDKMITL_God
             // 
             this.textBox_IDKMITL_God.Location = new System.Drawing.Point(179, 106);
-            this.textBox_IDKMITL_God.Name = "textBox_IDKMITL_God";
             this.textBox_IDKMITL_God.MaxLength = 8;
+            this.textBox_IDKMITL_God.Name = "textBox_IDKMITL_God";
             this.textBox_IDKMITL_God.Size = new System.Drawing.Size(219, 29);
             this.textBox_IDKMITL_God.TabIndex = 27;
             this.textBox_IDKMITL_God.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_IDKMITL_KeyPress);
@@ -1769,16 +1769,20 @@
             // textBox8
             // 
             this.textBox8.Location = new System.Drawing.Point(222, 383);
+            this.textBox8.MaxLength = 8;
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(142, 29);
-            this.textBox8.TabIndex = 6;
+            this.textBox8.TabIndex = 3;
+            this.textBox8.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_IDKMITL_KeyPress);
             // 
             // textBox7
             // 
             this.textBox7.Location = new System.Drawing.Point(222, 326);
+            this.textBox7.MaxLength = 8;
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(142, 29);
-            this.textBox7.TabIndex = 5;
+            this.textBox7.TabIndex = 2;
+            this.textBox7.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_IDKMITL_KeyPress);
             // 
             // button10
             // 
@@ -1821,10 +1825,12 @@
             // textBox4
             // 
             this.textBox4.Location = new System.Drawing.Point(222, 145);
+            this.textBox4.MaxLength = 8;
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(142, 29);
             this.textBox4.TabIndex = 0;
             this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+            this.textBox4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_IDKMITL_KeyPress);
             // 
             // tabPage16
             // 
@@ -1927,7 +1933,7 @@
             this.button8.Location = new System.Drawing.Point(773, 471);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(91, 38);
-            this.button8.TabIndex = 12;
+            this.button8.TabIndex = 24;
             this.button8.Text = "Submit";
             this.button8.UseVisualStyleBackColor = true;
             this.button8.Click += new System.EventHandler(this.button_AddThing_Click);
@@ -1955,14 +1961,14 @@
             this.textBox5.Location = new System.Drawing.Point(254, 87);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 6;
+            this.textBox5.TabIndex = 2;
             // 
             // button12
             // 
             this.button12.Location = new System.Drawing.Point(458, 87);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(93, 31);
-            this.button12.TabIndex = 5;
+            this.button12.TabIndex = 4;
             this.button12.Text = "login";
             this.button12.UseVisualStyleBackColor = true;
             this.button12.Click += new System.EventHandler(this.button12_Click);
@@ -1973,7 +1979,7 @@
             this.textBox6.Name = "textBox6";
             this.textBox6.PasswordChar = '*';
             this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 7;
+            this.textBox6.TabIndex = 3;
             this.textBox6.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox6_KeyDown);
             // 
             // label54
