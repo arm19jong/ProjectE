@@ -17,3 +17,22 @@ C:\Users\jongzazaal\Documents\projecten\project engineer\project engineer\bin\De
 C:\Users\jongzazaal\Documents\projecten\project engineer\project engineer\bin\Debug\System.Data.SQLite.xml
 C:\Users\jongzazaal\Documents\projecten\project engineer\project engineer\obj\Debug\project_engineer.Form2.resources
 C:\Users\jongzazaal\Documents\projecten\project engineer\project engineer\obj\Debug\project_engineer.Form3.resources
+C:\Users\jongzazaal\Documents\projecten\ProjectE\project engineer\bin\Debug\project engineer.exe.config
+C:\Users\jongzazaal\Documents\projecten\ProjectE\project engineer\obj\Debug\project engineer.exe
+C:\Users\jongzazaal\Documents\projecten\ProjectE\project engineer\obj\Debug\project engineer.pdb
+C:\Users\jongzazaal\Documents\projecten\ProjectE\project engineer\bin\Debug\project engineer.exe
+C:\Users\jongzazaal\Documents\projecten\ProjectE\project engineer\bin\Debug\project engineer.pdb
+C:\Users\jongzazaal\Documents\projecten\ProjectE\project engineer\bin\Debug\EntityFramework.dll
+C:\Users\jongzazaal\Documents\projecten\ProjectE\project engineer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\jongzazaal\Documents\projecten\ProjectE\project engineer\bin\Debug\System.Data.SQLite.dll
+C:\Users\jongzazaal\Documents\projecten\ProjectE\project engineer\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\jongzazaal\Documents\projecten\ProjectE\project engineer\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\jongzazaal\Documents\projecten\ProjectE\project engineer\bin\Debug\EntityFramework.xml
+C:\Users\jongzazaal\Documents\projecten\ProjectE\project engineer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\jongzazaal\Documents\projecten\ProjectE\project engineer\bin\Debug\System.Data.SQLite.xml
+C:\Users\jongzazaal\Documents\projecten\ProjectE\project engineer\obj\Debug\project engineer.csprojResolveAssemblyReference.cache
+C:\Users\jongzazaal\Documents\projecten\ProjectE\project engineer\obj\Debug\project_engineer.Form1.resources
+C:\Users\jongzazaal\Documents\projecten\ProjectE\project engineer\obj\Debug\project_engineer.Form2.resources
+C:\Users\jongzazaal\Documents\projecten\ProjectE\project engineer\obj\Debug\project_engineer.Form3.resources
+C:\Users\jongzazaal\Documents\projecten\ProjectE\project engineer\obj\Debug\project_engineer.Properties.Resources.resources
+C:\Users\jongzazaal\Documents\projecten\ProjectE\project engineer\obj\Debug\project engineer.csproj.GenerateResource.Cache

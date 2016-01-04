@@ -1990,6 +1990,29 @@ namespace project_engineer
         private void button9_Click(object sender, EventArgs e)
         {
             com.Open();
+            SQLiteCommand cmdsearch2 = new SQLiteCommand("SELECT * FROM MEMBER", com);
+            SQLiteDataReader readsearch2 = cmdsearch2.ExecuteReader();
+            string namee="";
+            while (readsearch2.Read())
+            {
+                if (readsearch2["IDKMITL"].ToString().Equals(textBox4.Text)) {
+                    namee = readsearch2["Name"].ToString();
+                }
+            }
+            com.Close();
+
+            DialogResult dialogResult = MessageBox.Show("คุณต้องการจะลบ "+namee , "ลบข้อมูลสมาชิก", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                //do something
+            }
+            else if (dialogResult == DialogResult.No)
+            {
+                return;
+            }
+
+
+            com.Open();
             SQLiteCommand cmdsearch = new SQLiteCommand("SELECT * FROM MEMBER", com);
             SQLiteDataReader readsearch = cmdsearch.ExecuteReader();
             string idgod="";
@@ -1998,6 +2021,8 @@ namespace project_engineer
                     idgod = readsearch["IDKMITL"].ToString();
                 }
             }
+            com.Close();
+            
 
             if (textBox4.Text.Equals(idgod)) {
                 MessageBox.Show("ขออภัยคุณไม่สามารถลบ God ได้", "unsuccessful",
@@ -2005,7 +2030,7 @@ namespace project_engineer
                 com.Close();
                 return;
             }
-            
+            com.Open();
             SQLiteCommand cmd_del = new SQLiteCommand("DELETE FROM MEMBER WHERE IDKMITL = "+textBox4.Text, com);
             cmd_del.ExecuteNonQuery();
             SQLiteCommand cmd_del2 = new SQLiteCommand("DELETE FROM RECALL WHERE IDKMITL = " + textBox4.Text, com);
@@ -2044,6 +2069,15 @@ namespace project_engineer
 
         private void button10_Click(object sender, EventArgs e)
         {
+            DialogResult dialogResult = MessageBox.Show("คุณต้องการจะลบ", "ลบข้อมูลสมาชิก", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                //do something
+            }
+            else if (dialogResult == DialogResult.No)
+            {
+                return;
+            }
             com.Open();
             progressBar1.Minimum = Convert.ToInt32(textBox7.Text);
             progressBar1.Maximum = Convert.ToInt32(textBox8.Text);
