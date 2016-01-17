@@ -1039,10 +1039,14 @@ namespace project_engineer
             com.Open();
             SQLiteCommand cmdsearch = new SQLiteCommand("SELECT * FROM THING", com);
             SQLiteDataReader readsearch = cmdsearch.ExecuteReader();
+            int aa = 0;
+            //Console.WriteLine("aaaa");
             while (readsearch.Read())
             {
+                aa += 1;
+                Console.WriteLine(readsearch["IDTHING"].ToString());
 
-                if (textBox_IDThing.Text.Equals(readsearch["IDTHING"]))
+                if (textBox_IDThing.Text.Equals(readsearch["IDTHING"].ToString()))
                 {
                     textBox_NameThing.Text = readsearch["Name"].ToString();
                     textBox_CountAll.Text = readsearch["CountAll"].ToString();
@@ -1052,7 +1056,7 @@ namespace project_engineer
                     label6.ForeColor = Color.Green;
                     abc = true;
                 }
-                else if (Convert.ToInt32(readsearch["ID"]) == Tabrows && abc == false)
+                else if (aa == Tabrows && abc == false)
                 {
                     textBox_NameThing.Text = "";
                     textBox_CountAll.Text = "";
@@ -1142,8 +1146,10 @@ namespace project_engineer
             cmdna.Parameters.AddWithValue("$Other", richTextBox_Otherr.Text);
             cmdna.ExecuteNonQuery();
             com.Close();
+            textBox_IDThing_TextChanged(sender, e);
             MessageBox.Show("บันทึกการเพิ่มเติมสิ่งของเสร็จเรียบร้อย", "successful",
             MessageBoxButtons.OK, MessageBoxIcon.Information);
+
         }
 
         //------------------------------------TableAll-------------------------------------------//
